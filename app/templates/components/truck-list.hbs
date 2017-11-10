@@ -2,7 +2,7 @@
 
 <ul>
   {{#each list as |truck|}}
-    <li {{action 'openModal' 'truck' truck}}>{{truck.name}}</li>
+    <li {{action 'openModal' truck.name}}>{{truck.name}}</li>
     {{truck-modal truck=truck id=truck.name}}
   {{/each}}
 </ul>
