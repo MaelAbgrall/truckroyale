@@ -2,8 +2,7 @@
 
 <ul>
   {{#each list as |type|}}
-    <li {{action 'openModal' 'type' type}}>{{type}}</li>
+    <li {{action 'openModal' type.name}}>{{type.name}}</li>
+    {{type-modal type=type id=type.name}}
   {{/each}}
 </ul>
-
-{{type-modal}}

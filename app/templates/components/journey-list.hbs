@@ -2,8 +2,7 @@
 
 <ul>
   {{#each list as |journey|}}
-    <li {{action 'openModal' 'journey' journey}}>{{journey.name}}</li>
+    <li {{action 'openModal' journey}}>{{journey.name}}</li>
+    {{journey-modal journey=journey id=journey.name}}
   {{/each}}
 </ul>
-
-{{journey-modal}}
