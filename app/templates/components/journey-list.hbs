@@ -1,0 +1,9 @@
+<h2>{{title}}</h2>
+
+<ul>
+  {{#each list as |journey|}}
+    <li {{action 'openModal' 'journey' journey}}>{{journey.name}}</li>
+  {{/each}}
+</ul>
+
+{{journey-modal}}

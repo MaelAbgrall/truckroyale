@@ -1,0 +1,6 @@
+{
+  "name": "truck-royal",
+  "dependencies": {
+    "semantic-ui": "^2.2.13"
+  }
+}

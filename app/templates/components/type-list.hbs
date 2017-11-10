@@ -1,0 +1,9 @@
+<h2>{{title}}</h2>
+
+<ul>
+  {{#each list as |type|}}
+    <li {{action 'openModal' 'type' type}}>{{type}}</li>
+  {{/each}}
+</ul>
+
+{{type-modal}}
